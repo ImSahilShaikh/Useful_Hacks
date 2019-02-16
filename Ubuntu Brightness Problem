@@ -1,0 +1,6 @@
+//If brightness in ubuntu is not working you can do following changes in grub:
+first open '/etc/default/grub' file using gedit or any other text editor
+Find below line:
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+Change above line to
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor"
