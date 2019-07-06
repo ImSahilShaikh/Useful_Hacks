@@ -1,0 +1,13 @@
+Steps to fix VLC media player to run it as a root user:
+1.Open terminal
+2.Open vlc in hexeditor using following command
+  root@user:~# hexeditor /usr/bin/vlc
+3.Press Ctrl+W, this will open a search option window, select "string text search"
+4.Type geteuid and press Enter
+5.Now press tab to switch from the ASCII side of your hexeditor
+6.Replace geteuid with getppid
+7.Press Ctrl+X to exit saving changes
+8.Save the file in /usr/bin/vlc
+
+Launch the VLC media player!
+It will surely work!!
