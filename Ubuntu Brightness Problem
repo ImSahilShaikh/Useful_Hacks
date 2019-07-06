@@ -1,6 +1,6 @@
 //If brightness in ubuntu is not working you can do following changes in grub(for both shortcut buttons and slider in system settings):
-first open '/etc/default/grub' file using gedit or any other text editor
-Find below line:
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-Change above line to
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor"
+1.Open '/etc/default/grub' file using gedit or any other text editor
+2.Find the line given as below :
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+3.Change above line to:
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor"
