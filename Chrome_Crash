@@ -1,0 +1,9 @@
+In most of linux os, google chrome generally gets crashed upon installation;
+To avoid it use following steps:
+1.Open /usr/share/applications
+2.search google-chrome
+3.Right click and edit the command in basic properties 
+or
+3.Open using any editor and search for Exec
+4.append --no-sandbox to the command
+5.You're done! Google Chrome will run smoothly now! :)
